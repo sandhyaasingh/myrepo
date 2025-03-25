@@ -1,7 +1,7 @@
 package com.tnsif.javapackages;
 import java.util.Scanner;
 
-public class Demo2_21stMarch2025 {
+public class Demo2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

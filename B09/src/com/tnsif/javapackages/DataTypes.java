@@ -1,7 +1,7 @@
 package com.tnsif.javapackages;
 import java.util.Scanner;
 
-public class DataTypes_21stMarch2025 {
+public class DataTypes {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
