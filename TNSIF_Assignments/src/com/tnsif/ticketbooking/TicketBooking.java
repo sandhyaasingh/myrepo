@@ -2,15 +2,10 @@ package com.tnsif.ticketbooking;
 
 public class TicketBooking {
 
-    private static int tickets = 10;
+    private static int tickets = 5;
 
-    static {
-        System.out.println("Static block in TicketBooking");
-        tickets = 10;
-    }
-
-    public TicketBooking() {
-        System.out.println("Default constructor in TicketBooking");
+    public static void displayTickets() {
+        System.out.println("Total tickets available: " + tickets);
     }
 
     public void bookTicket() {
@@ -21,14 +16,5 @@ public class TicketBooking {
         } else {
             System.out.println("No tickets available for booking.");
         }
-    }
-
-    public static void displayTickets() {
-        System.out.println("Total tickets available: " + tickets);
-    }
-
-    @Override
-    public String toString() {
-        return "TicketBooking [tickets=" + tickets + "]";
     }
 }
