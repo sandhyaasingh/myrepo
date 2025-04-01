@@ -1,7 +1,5 @@
 package com.tnsif.TicketBooking;
 
-import com.tnsif.TicketBooking.TicketBooking;
-
 public class Demo {
 
     public static void main(String[] args) {
