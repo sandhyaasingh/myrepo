@@ -1,4 +1,4 @@
-package com.tnsif.BankAcc;
+package com.tnsif.bankacc;
 
 public class Demo {
 

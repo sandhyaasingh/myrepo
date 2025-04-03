@@ -1,4 +1,4 @@
-package com.tnsif.Q1;
+package com.tnsif.q1;
 import java.util.Scanner;
 
 public class Commission {

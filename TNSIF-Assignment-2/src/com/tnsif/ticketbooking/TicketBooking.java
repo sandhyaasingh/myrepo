@@ -1,4 +1,4 @@
-package com.tnsif.TicketBooking;
+package com.tnsif.ticketbooking;
 
 public class TicketBooking {
 

@@ -1,4 +1,4 @@
-package com.tnsif.Q2;
+package com.tnsif.q2;
 import java.util.Scanner;
 
 public class Circle {
