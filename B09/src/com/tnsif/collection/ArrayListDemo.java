@@ -1,4 +1,4 @@
-package com.tns.collection;
+package com.tnsif.collection;
 
 import java.util.ArrayList;
 import java.util.List;

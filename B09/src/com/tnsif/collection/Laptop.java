@@ -1,4 +1,4 @@
-package com.tns.collection;
+package com.tnsif.collection;
 
 public class Laptop implements Comparable<Laptop> {
 	private String brand;

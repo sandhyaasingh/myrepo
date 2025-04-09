@@ -1,4 +1,4 @@
-package com.tns.abstraction;
+package com.tnsif.abstraction;
 
 public abstract class Addition extends MyTest {
 
