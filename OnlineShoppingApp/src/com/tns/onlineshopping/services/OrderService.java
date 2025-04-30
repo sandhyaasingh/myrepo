@@ -1,6 +1,6 @@
-package com.shoppingapp.services;
+package com.tns.onlineshopping.services;
 
-import com.shoppingapp.entities.*;
+import com.tns.onlineshopping.entities.*;
 
 import java.util.ArrayList;
 import java.util.List;

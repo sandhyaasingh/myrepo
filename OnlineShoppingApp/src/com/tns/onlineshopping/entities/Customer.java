@@ -1,4 +1,4 @@
-package com.shoppingapp.entities;
+package com.tns.onlineshopping.entities;
 
 import java.util.ArrayList;
 import java.util.List;

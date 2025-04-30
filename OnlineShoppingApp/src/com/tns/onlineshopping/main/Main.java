@@ -1,7 +1,7 @@
-package com.shoppingapp.main;
+package com.tns.onlineshopping.main;
 
-import com.shoppingapp.entities.*;
-import com.shoppingapp.services.*;
+import com.tns.onlineshopping.entities.*;
+import com.tns.onlineshopping.services.*;
 
 import java.util.Scanner;
 

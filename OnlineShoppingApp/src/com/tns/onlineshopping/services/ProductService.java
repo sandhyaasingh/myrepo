@@ -1,6 +1,6 @@
-package com.shoppingapp.services;
+package com.tns.onlineshopping.services;
 
-import com.shoppingapp.entities.Product;
+import com.tns.onlineshopping.entities.Product;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,8 +30,13 @@ public class ProductService {
         }
     }
 
-	public Product getProductById(int pid) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    // ✅ This is the missing piece you need
+    public Product getProductById(int productId) {
+        for (Product product : productList) {
+            if (product.getProductId() == productId) {
+                return product;
+            }
+        }
+        return null;
+    }
 }

@@ -1,4 +1,4 @@
-package com.shoppingapp.entities;
+package com.tns.onlineshopping.entities;
 
 public class Product {
     private int productId;
