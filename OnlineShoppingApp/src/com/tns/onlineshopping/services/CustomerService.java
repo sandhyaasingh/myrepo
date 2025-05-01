@@ -10,7 +10,7 @@ public class CustomerService {
 
     public void createCustomer(Customer customer) {
         customerList.add(customer);
-        System.out.println("✅ Customer created successfully!");
+        System.out.println("Customer created successfully!");
     }
 
     public List<Customer> getAllCustomers() {
@@ -28,7 +28,7 @@ public class CustomerService {
 
     public void displayCustomers() {
         if (customerList.isEmpty()) {
-            System.out.println("⚠️ No customers found.");
+            System.out.println("No customers found.");
         } else {
             for (Customer c : customerList) {
                 System.out.println(c);

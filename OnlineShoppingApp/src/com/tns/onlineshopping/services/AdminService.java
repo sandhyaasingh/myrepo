@@ -10,7 +10,7 @@ public class AdminService {
 
     public void createAdmin(Admin admin) {
         adminList.add(admin);
-        System.out.println("✅ Admin created successfully!");
+        System.out.println("Admin created successfully!");
     }
 
     public List<Admin> getAllAdmins() {
@@ -19,7 +19,7 @@ public class AdminService {
 
     public void displayAdmins() {
         if (adminList.isEmpty()) {
-            System.out.println("⚠️ No admins found.");
+            System.out.println("No admins found.");
         } else {
             for (Admin admin : adminList) {
                 System.out.println(admin);

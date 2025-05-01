@@ -32,7 +32,7 @@ public class ShoppingCart {
 
     public void displayCart() {
         if (items.isEmpty()) {
-            System.out.println("🛒 Cart is empty.");
+            System.out.println("Cart is empty.");
         } else {
             for (Map.Entry<Product, Integer> entry : items.entrySet()) {
                 System.out.println("Product: " + entry.getKey().getName() + ", Quantity: " + entry.getValue());

@@ -12,7 +12,7 @@ public class OrderService {
     public void placeOrder(Customer customer) {
         ShoppingCart cart = customer.getShoppingCart();
         if (cart.isEmpty()) {
-            System.out.println("⚠️ Cart is empty. Cannot place order.");
+            System.out.println("Cart is empty. Cannot place order.");
             return;
         }
 
@@ -37,24 +37,24 @@ public class OrderService {
         customer.addOrder(order);
         cart.clearCart();
 
-        System.out.println("✅ Order placed successfully! Order ID: " + order.getOrderId());
+        System.out.println("Order placed successfully! Order ID: " + order.getOrderId());
     }
 
     public void updateOrderStatus(int orderId, String newStatus) {
         for (Order order : orderList) {
             if (order.getOrderId() == orderId) {
                 order.setStatus(newStatus);
-                System.out.println("✅ Order status updated to: " + newStatus);
+                System.out.println("Order status updated to: " + newStatus);
                 return;
             }
         }
-        System.out.println("⚠️ Order ID not found.");
+        System.out.println("Order ID not found.");
     }
 
     public void displayOrdersForCustomer(Customer customer) {
         List<Order> orders = customer.getOrders();
         if (orders.isEmpty()) {
-            System.out.println("⚠️ No orders found for this customer.");
+            System.out.println("No orders found for this customer.");
         } else {
             for (Order order : orders) {
                 System.out.println(order);
@@ -64,7 +64,7 @@ public class OrderService {
 
     public void displayAllOrders() {
         if (orderList.isEmpty()) {
-            System.out.println("⚠️ No orders available.");
+            System.out.println("No orders available.");
         } else {
             for (Order order : orderList) {
                 System.out.println(order);

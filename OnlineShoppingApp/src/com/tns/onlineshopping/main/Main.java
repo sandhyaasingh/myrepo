@@ -16,7 +16,7 @@ public class Main {
         OrderService orderService = new OrderService();
 
         while (true) {
-            System.out.println("\n🔷 MAIN MENU");
+            System.out.println("\nMAIN MENU");
             System.out.println("1. Admin Menu");
             System.out.println("2. Customer Menu");
             System.out.println("3. Exit");
@@ -31,18 +31,18 @@ public class Main {
                     customerMenu(sc, productService, customerService, orderService);
                     break;
                 case 3:
-                    System.out.println("👋 Exiting application...");
+                    System.out.println("Exiting application...");
                     sc.close();
                     return;
                 default:
-                    System.out.println("⚠️ Invalid choice.");
+                    System.out.println("Invalid choice.");
             }
         }
     }
 
     public static void adminMenu(Scanner sc, ProductService ps, AdminService as, OrderService os) {
         while (true) {
-            System.out.println("\n🔹 ADMIN MENU");
+            System.out.println("\n ADMIN MENU");
             System.out.println("1. Add Product");
             System.out.println("2. Remove Product");
             System.out.println("3. View Products");
@@ -109,14 +109,14 @@ public class Main {
                     return;
 
                 default:
-                    System.out.println("⚠️ Invalid choice.");
+                    System.out.println("Invalid choice.");
             }
         }
     }
 
     public static void customerMenu(Scanner sc, ProductService ps, CustomerService cs, OrderService os) {
         while (true) {
-            System.out.println("\n🔹 CUSTOMER MENU");
+            System.out.println("\n CUSTOMER MENU");
             System.out.println("1. Create Customer");
             System.out.println("2. View Customers");
             System.out.println("3. Place Order");
@@ -152,7 +152,7 @@ public class Main {
                     if (customer != null) {
                         os.placeOrder(customer);
                     } else {
-                        System.out.println("❌ Customer not found.");
+                        System.out.println("Customer not found.");
                     }
                     break;
 
@@ -162,7 +162,7 @@ public class Main {
                     if (c != null) {
                         os.displayOrdersForCustomer(c);
                     } else {
-                        System.out.println("❌ Customer not found.");
+                        System.out.println("Customer not found.");
                     }
                     break;
 
@@ -185,11 +185,11 @@ public class Main {
                             if (p != null) {
                                 cust.getShoppingCart().addProduct(p, q);
                             } else {
-                                System.out.println("❌ Product not found.");
+                                System.out.println("Product not found.");
                             }
                         }
                     } else {
-                        System.out.println("❌ Customer not found.");
+                        System.out.println("Customer not found.");
                     }
                     break;
 
@@ -199,7 +199,7 @@ public class Main {
                     if (cartCust != null) {
                         cartCust.getShoppingCart().displayCart();
                     } else {
-                        System.out.println("❌ Customer not found.");
+                        System.out.println("Customer not found.");
                     }
                     break;
 
@@ -207,7 +207,7 @@ public class Main {
                     return;
 
                 default:
-                    System.out.println("⚠️ Invalid choice.");
+                    System.out.println("Invalid choice.");
             }
         }
     }
