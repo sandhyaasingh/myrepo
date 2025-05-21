@@ -5,7 +5,7 @@ public class JDBCdemo {
 	public static void main(String[] args) {
 		String url = "jdbc:postgresql://localhost:5432/JDBCdemo";
 		String username = "postgres";
-		String password = "$Salto1Angel$";
+		String password = "s";
 		try {
 			//Load the driver - 3rd step
 			Class.forName("org.postgresql.Driver");
